@@ -6,13 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Card card;
-    private bool leftSwiped => Input.GetKeyDown(KeyCode.LeftArrow);
+    private bool leftSwiped => Input.GetKeyDown(KeyCode.LeftArrow); // Bu kýsým saða sola atmayý simüle etmek için yapýldý silinecek
     private bool rightSwiped => Input.GetKeyDown(KeyCode.RightArrow);
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (leftSwiped)

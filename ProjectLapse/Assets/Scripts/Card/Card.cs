@@ -6,10 +6,10 @@ using UnityEngine;
 public class Card : ScriptableObject
 {
     public string text;
+    public Sprite art;
 
     public List<StatPair> leftStats = new List<StatPair>();
     public List<StatPair> rightStats = new List<StatPair>();
-
 }
 
 [System.Serializable]
