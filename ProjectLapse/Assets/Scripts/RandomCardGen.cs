@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomCardGen : MonoBehaviour
 {
-    public int currentCard = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
+    public int phase = 0, currentCard = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
     public int[] mainDeck = new int[40];
     public int[] deck_1 = new int[40];
     public int[] deck_2 = new int[40];
@@ -22,6 +22,75 @@ public class RandomCardGen : MonoBehaviour
         randomCardSet_4();
         randomCardSet_5();
         randomCardSet_6();
+    }
+    void Update()
+    {
+        phases();
+        phaseProgress();
+    }
+    public void phaseProgress()
+    {
+        //donum noktasýndaki kartlarin saga ya da sola kaydirildiginda secim yapilacak mekanik eklenmeli
+        /*
+        if ()//ilk donum noktasý sola kaydirilirsa
+        {
+            phase = 1;
+            Debug.Log("Direnisi sectin.");
+            
+        }
+        if ()//ikinci donum noktasi sola kaydirilirsa
+        {
+            phase = 3;
+            Debug.Log("Kaldin.");
+        }
+        if ()//ikinci donum noktasi saga kaydirilirsa
+        {
+            phase = 4;
+            Debug.Log("Kactin.");
+        }
+        if ()//ilk donum noktasý saga kaydirilirsa
+        {
+            phase = 2;
+            Debug.Log("Devleti sectin.");
+        }
+        if ()//ucuncu donum noktasý sola kaydirilirsa
+        {
+            phase = 4;
+            Debug.Log("Kactin.");
+        }
+        if ()//ucuncu donum noktasý saga kaydirilirsa
+        {
+            phase = 5;
+            Debug.Log("Kaldin.");
+        }
+        */
+    }
+    public void phases() 
+    {
+        if (phase == 0)
+        {
+            mainDeck = deck_1;
+        }
+        if (phase == 1)
+        {
+            mainDeck = deck_2;
+        }
+        if (phase == 2)
+        {
+            mainDeck = deck_3;
+        }
+        if (phase == 3)
+        {
+            mainDeck = deck_4;
+        }
+        if (phase == 4)
+        {
+            mainDeck = deck_5;
+        }
+        if (phase == 5)
+        {
+            mainDeck = deck_6;
+        }
     }
 
 
