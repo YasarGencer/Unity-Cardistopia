@@ -6,7 +6,6 @@ using UnityEngine;
 public class Stat : ScriptableObject
 {
 
-    public string statName;
     [Range(0,1000)]public int currentValue;
 
 
