@@ -8,9 +8,11 @@ public class CardMovement : MonoBehaviour
     public int maxDistance;
     Canvas canvas;
     Vector2 startPos;
+    GameManager gameManager;
     void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         startPos = transform.position;
     }
     public void DragHandler(BaseEventData data)
@@ -33,9 +35,9 @@ public class CardMovement : MonoBehaviour
     public void DropHandler(BaseEventData data)
     {
         if (transform.position.x < 50)
-            Debug.Log("SWIPED LEFT");
+            gameManager.SwipeEffectt(true);
         else if (transform.position.x > 130)
-            Debug.Log("SWIPED RIGHT");
+            gameManager.SwipeEffectt(false);
 
         transform.position = startPos;
         transform.rotation = Quaternion.Euler(0, 0, 0);
