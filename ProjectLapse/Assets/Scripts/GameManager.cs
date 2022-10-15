@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Card card;
+    public static int cardCounter = 0;
     public void SwipeEffectt(bool value)
     {
         if (value)
@@ -14,5 +15,7 @@ public class GameManager : MonoBehaviour
         if (!value)
             foreach (var statPair in card.rightStats)
                 statPair.stat.ApplyStats(statPair.changeValue);
+
+        cardCounter++;
     }
 }
