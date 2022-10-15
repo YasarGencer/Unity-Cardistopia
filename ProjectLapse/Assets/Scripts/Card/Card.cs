@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
-    public string text;
+    [TextArea] public string text;
     public Sprite art;
 
     public List<StatPair> leftStats = new List<StatPair>();
