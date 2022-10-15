@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RandomCardGen : MonoBehaviour
 {
-    public int phase = 0, currentCard = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
+    public int phase = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
+    public static int totalCardCount =0;
     public int[] mainDeck = new int[40];
     public int[] deck_1 = new int[40];
     public int[] deck_2 = new int[40];
@@ -68,28 +69,41 @@ public class RandomCardGen : MonoBehaviour
     public void phases() 
     {
         if (phase == 0)
-        {
+        {   
             mainDeck = deck_1;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
+
         }
-        if (phase == 1)
+        else if (phase == 1)
         {
             mainDeck = deck_2;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
         }
-        if (phase == 2)
+        else if (phase == 2)
         {
             mainDeck = deck_3;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
         }
-        if (phase == 3)
+        else if (phase == 3)
         {
             mainDeck = deck_4;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
         }
-        if (phase == 4)
+        else if (phase == 4)
         {
             mainDeck = deck_5;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
         }
-        if (phase == 5)
+        else if (phase == 5)
         {
             mainDeck = deck_6;
+            totalCardCount = GameManager.cardCounter + totalCardCount;
+            GameManager.cardCounter = 0;
         }
     }
 
