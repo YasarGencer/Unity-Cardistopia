@@ -15,7 +15,7 @@ public class CardMovement : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         startPos = transform.position;
     }
-    public void DragHandler(BaseEventData data)
+    public void DragHandler(BaseEventData data)//kart birakilinca basladigi yere donmeli
     {
         PointerEventData pointer = (PointerEventData)data;
 
@@ -36,9 +36,10 @@ public class CardMovement : MonoBehaviour
     {
         if (transform.position.x < 50)
             gameManager.SwipeEffectt(true);
+            //ekrandan cikip silinmeli yeni kart gelmeli
         else if (transform.position.x > 130)
             gameManager.SwipeEffectt(false);
-
+            //burada da
         transform.position = startPos;
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
@@ -46,7 +47,7 @@ public class CardMovement : MonoBehaviour
     {
         float rotation;
         float value = transform.position.x - startPos.x;
-        rotation = -1 * value * 100 / 350;
+        rotation = -1 * value *5;
 
         transform.rotation = Quaternion.Euler(0, 0, rotation);
     }

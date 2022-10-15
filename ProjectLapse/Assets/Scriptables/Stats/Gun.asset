@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31383f86bd90c7e4c895104106eed2ae, type: 3}
   m_Name: Gun
   m_EditorClassIdentifier: 
-  statName: Gun
-  currentValue: 700
+  currentValue: 751
