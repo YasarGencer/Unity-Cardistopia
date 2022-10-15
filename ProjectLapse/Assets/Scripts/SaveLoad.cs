@@ -9,16 +9,22 @@ public class SaveLoad : MonoBehaviour
         GameManager=GameObject.Find("Game_Manager");
     }
 
-    void Save(){
+    public void Save(){
         for(int a=0;a!=40;a++){
             PlayerPrefs.SetInt("Card"+a.ToString(), GameManager.GetComponent<RandomCardGen>().mainDeck[a]);
+            
         }
+        PlayerPrefs.SetInt("CardCount", GameManager.cardCounter);
+        PlayerPrefs.SetInt("TotalCardCount", GameManager.totalCardCounter);
         
     }
 
-    void Load(){
+    public void Load(){
         for(int a=0;a!=40;a++){
            GameManager.GetComponent<RandomCardGen>().mainDeck[a]= PlayerPrefs.GetInt("Card"+a.ToString());
+
         }
+        GameManager.cardCounter=PlayerPrefs.GetInt("CardCount");
+        GameManager.totalCardCounter=PlayerPrefs.GetInt("TotalCardCount");
     }
 }

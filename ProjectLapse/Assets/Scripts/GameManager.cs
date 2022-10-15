@@ -17,5 +17,6 @@ public class GameManager : MonoBehaviour
                 statPair.stat.ApplyStats(statPair.changeValue);
 
         cardCounter++;
+        GetComponent<SaveLoad>().Save();
     }
 }
