@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class SaveLoad : MonoBehaviour
 {
-    public GameObject GameManager;
+
     void Start(){
-        GameManager=GameObject.Find("Game_Manager");
+        
     }
 
     public void Save(){
         for(int a=0;a!=40;a++){
-            PlayerPrefs.SetInt("Card"+a.ToString(), GameManager.GetComponent<RandomCardGen>().mainDeck[a]);
+            PlayerPrefs.SetInt("Card"+a.ToString(), GetComponent<RandomCardGen>().mainDeck[a]);
             
         }
         PlayerPrefs.SetInt("CardCount", GameManager.cardCounter);
-        PlayerPrefs.SetInt("TotalCardCount", GameManager.totalCardCounter);
-        
+        PlayerPrefs.SetInt("TotalCardCount", RandomCardGen.totalCardCount);
+        PlayerPrefs.SetInt("Phase", GetComponent<RandomCardGen>().phase); 
     }
 
     public void Load(){
         for(int a=0;a!=40;a++){
-           GameManager.GetComponent<RandomCardGen>().mainDeck[a]= PlayerPrefs.GetInt("Card"+a.ToString());
+           GetComponent<RandomCardGen>().mainDeck[a]= PlayerPrefs.GetInt("Card"+a.ToString());
 
         }
         GameManager.cardCounter=PlayerPrefs.GetInt("CardCount");
-        GameManager.totalCardCounter=PlayerPrefs.GetInt("TotalCardCount");
+        RandomCardGen.totalCardCount=PlayerPrefs.GetInt("TotalCardCount");
+        GetComponent<RandomCardGen>().phase=PlayerPrefs.GetInt("Phase"); 
     }
 }
