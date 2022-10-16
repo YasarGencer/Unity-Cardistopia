@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
-  m_Name: Example1
+  m_Name: 0
   m_EditorClassIdentifier: 
-  text: Place Holder
+  text: Name Test
+  description: Description Test
+  Rtext: Right test
+  Ltext: Left Test
   art: {fileID: 21300000, guid: fdad952bb7742cf469ed8b5c40bb9a74, type: 3}
   leftStats:
-  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
-    changeValue: 100
   - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
-    changeValue: -100
+    changeValue: 250
+  - stat: {fileID: 11400000, guid: 703a43443f3aea941bfd1981734721a9, type: 2}
+    changeValue: -60
   rightStats:
-  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
-    changeValue: 100
-  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
-    changeValue: 7257
+  - stat: {fileID: 11400000, guid: cf6af246fee1aec428dd4f2610c600f3, type: 2}
+    changeValue: -341
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: 599

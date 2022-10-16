@@ -12,7 +12,7 @@ public class CardMovement : MonoBehaviour
     void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Game_Manager_Object").GetComponent<GameManager>();
         startPos = transform.position;
     }
     public void DragHandler(BaseEventData data)//kart birakilinca basladigi yere donmeli
