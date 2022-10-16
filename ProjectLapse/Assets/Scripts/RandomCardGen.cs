@@ -34,9 +34,9 @@ public class RandomCardGen : MonoBehaviour
     {
         //donum noktasýndaki kartlarin saga ya da sola kaydirildiginda secim yapilacak mekanik eklenmeli
         /*
-        if ()//ilk donum noktasý sola kaydirilirsa
+        if (phase==1 && value)//ilk donum noktasý sola kaydirilirsa
         {
-            phase = 1;
+            phase = 2;
             Debug.Log("Direnisi sectin.");
             
         }
@@ -52,17 +52,17 @@ public class RandomCardGen : MonoBehaviour
         }
         else if ()//ilk donum noktasý saga kaydirilirsa
         {
-            phase = 2;
+            phase = 5;
             Debug.Log("Devleti sectin.");
         }
         else if ()//ucuncu donum noktasý sola kaydirilirsa
         {
-            phase = 4;
+            phase = 5;
             Debug.Log("Kactin.");
         }
         else if ()//ucuncu donum noktasý saga kaydirilirsa
         {
-            phase = 5;
+            phase = 6;
             Debug.Log("Kaldin.");
         }
         */
