@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Example1
   m_EditorClassIdentifier: 
   text: Place Holder
+  description: 
+  Rtext: 
+  Ltext: 
   art: {fileID: 21300000, guid: fdad952bb7742cf469ed8b5c40bb9a74, type: 3}
   leftStats:
   - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
@@ -23,4 +26,4 @@ MonoBehaviour:
   - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
     changeValue: 100
   - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
-    changeValue: 7257
+    changeValue: -100

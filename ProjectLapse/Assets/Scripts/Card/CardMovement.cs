@@ -34,12 +34,18 @@ public class CardMovement : MonoBehaviour
     }
     public void DropHandler(BaseEventData data)
     {
-        if (transform.position.x < 50)
+        if (transform.position.x < -3)  // Canvasýn içinde x deðeri nedense -9 ve 9 arasýnda gidip geliyor þimdilik deðiþtiriyorum eski
+        {                               // Eski deðerler 50 ve 130 -Altay
             gameManager.SwipeEffect(true);
+            Debug.Log("sol");
+        }
             //ekrandan cikip silinmeli yeni kart gelmeli
-        else if (transform.position.x > 130)
+        else if (transform.position.x > 3)
+        {
             gameManager.SwipeEffect(false);
-            //burada da
+            Debug.Log("sað");
+        }
+        //burada da
         transform.position = startPos;
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }

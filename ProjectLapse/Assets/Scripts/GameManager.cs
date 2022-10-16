@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         cardCounter++;
         if (statStorage.CheckStats())
         {
-            statStorage.GetStat().GetEndingCards;
+            Debug.Log(statStorage.GetStat().name); // statStorage.GetStat().GetEndingCards ile oyun sonu kartlarý çekilip ekrana getirilecek.
         }
         GetComponent<SaveLoad>().Save();
     }
