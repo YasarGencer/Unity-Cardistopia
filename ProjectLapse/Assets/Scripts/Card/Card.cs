@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
+    
     [TextArea] public string text;
     [TextArea] public string description;
     [TextArea] public string Rtext;

@@ -7,29 +7,38 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public Image cardOnDisplay;
-    public Card card;
+    public Card currentCard;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
+
+    private StatStorage statStorage;
     public void SwipeEffect(bool value)
     {
         if (value)
-            foreach (var statPair in card.leftStats)
+            foreach (var statPair in currentCard.leftStats)
                 statPair.stat.ApplyStats(statPair.changeValue);
 
         if (!value)
-            foreach (var statPair in card.rightStats)
+            foreach (var statPair in currentCard.rightStats)
                 statPair.stat.ApplyStats(statPair.changeValue);
 
         cardCounter++;
-        
+        if (statStorage.CheckStats())
+        {
+
+        }
         GetComponent<SaveLoad>().Save();
     }
     void ChangeCard()
     {
-        Rtext.text = card.Rtext;
-        Ltext.text = card.Ltext;
-        text.text = card.text;
-        cardOnDisplay.sprite = card.art;
-        DescriptionText.text = card.description;
+        Rtext.text = currentCard.Rtext;
+        Ltext.text = currentCard.Ltext;
+        text.text = currentCard.text;
+        cardOnDisplay.sprite = currentCard.art;
+        DescriptionText.text = currentCard.description;
+    }
+    private void Start()
+    {
+        statStorage = GetComponent<StatStorage>();
     }
 }
