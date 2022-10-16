@@ -35,14 +35,14 @@ public class CardMovement : MonoBehaviour
     }
     public void DropHandler(BaseEventData data)
     {
-        if (transform.position.x < -3)  // Canvasýn içinde x deðeri nedense -9 ve 9 arasýnda gidip geliyor þimdilik deðiþtiriyorum eski
+        if (transform.position.x < -6)  // Canvasýn içinde x deðeri nedense -9 ve 9 arasýnda gidip geliyor þimdilik deðiþtiriyorum eski
         {                               // Eski deðerler 50 ve 130 -Altay
             gameManager.SwipeEffect(true);
             Debug.Log("sol");
             storyCardValue = 1;
         }
             //ekrandan cikip silinmeli yeni kart gelmeli
-        else if (transform.position.x > 3)
+        else if (transform.position.x > 6)
         {
             gameManager.SwipeEffect(false);
             Debug.Log("sað");
