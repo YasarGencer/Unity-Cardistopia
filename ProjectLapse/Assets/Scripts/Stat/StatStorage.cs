@@ -31,8 +31,10 @@ public class StatStorage : MonoBehaviour
         for (int a=0;a!=5;a++)
         {
             if (statList[a].currentValue >= 1000 || statList[a].currentValue <= 0)
+            {
                 endingStat = statList[a];
                 return true;
+            }
         }
         return false;
     }
