@@ -6,22 +6,17 @@ public class StatStorage : MonoBehaviour
 {
     public List<Stat> statList;
     
-    [SerializeField] private Stat stat1;
-    [SerializeField] private Stat stat2;
-
     private Stat endingStat;
-    private void Start()
-    {
-        statList.Add(stat1);
-        statList.Add(stat2);
-    }
+
     public bool CheckStats()
     {
-        foreach (Stat stat in statList)
+        for (int a=0;a!=5;a++)
         {
-            if (stat.currentValue >= 1000 || stat.currentValue <= 0)
-                endingStat = stat;
+            if (statList[a].currentValue >= 1000 || statList[a].currentValue <= 0)
+            {
+                endingStat = statList[a];
                 return true;
+            }
         }
         return false;
     }
