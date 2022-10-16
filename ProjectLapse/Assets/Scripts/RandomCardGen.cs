@@ -6,110 +6,109 @@ public class RandomCardGen : MonoBehaviour
 {
     public int phase = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
     public static int totalCardCount = 0;
-    public int[] mainDeck = new int[40];
-    public int[] deck_1 = new int[40];
-    public int[] deck_2 = new int[40];
-    public int[] deck_3 = new int[40];
-    public int[] deck_4 = new int[40];
-    public int[] deck_5 = new int[40];
-    public int[] deck_6 = new int[40];
+    public int[] mainDeck = new int[30];
+    public int[] deck_1 = new int[70];
+    public int[] deck_2 = new int[70];
+    public int[] deck_3 = new int[70];
+    public int[] deck_4 = new int[70];
+    public int[] deck_5 = new int[70];
+    public int[] deck_6 = new int[70];
 
     void Start()
     {
-        randomCardset(deck_1, 40, firstStoryCardNumber, lastStoryCardNumber);
-        randomCardset(deck_2, 40, firstStoryCardNumber, lastStoryCardNumber);
-        randomCardset(deck_3, 40, firstStoryCardNumber, lastStoryCardNumber);
-        randomCardset(deck_4, 40, firstStoryCardNumber, lastStoryCardNumber);
-        randomCardset(deck_5, 40, firstStoryCardNumber, lastStoryCardNumber);
-        randomCardset(deck_6, 40, firstStoryCardNumber, lastStoryCardNumber);
-    }
-    
-    void Update()
-    {
-        phases();
-        phaseProgress();
+        RandomCardset(deck_1, 70, firstStoryCardNumber, lastStoryCardNumber);
+        RandomCardset(deck_2, 70, firstStoryCardNumber, lastStoryCardNumber);
+        RandomCardset(deck_3, 70, firstStoryCardNumber, lastStoryCardNumber);
+        RandomCardset(deck_4, 70, firstStoryCardNumber, lastStoryCardNumber);
+        RandomCardset(deck_5, 70, firstStoryCardNumber, lastStoryCardNumber);
+        RandomCardset(deck_6, 70, firstStoryCardNumber, lastStoryCardNumber);
     }
 
-    public void phaseProgress()
+    void Update()
+    {
+        Phases();
+        PhaseProgress();
+    }
+
+    public void PhaseProgress()
     {
         //donum noktasýndaki kartlarin saga ya da sola kaydirildiginda secim yapilacak mekanik eklenmeli
-        /*
-        if (phase==1 && value)//ilk donum noktasý sola kaydirilirsa
+
+        if ((phase == 0) && (CardMovement.storyCardValue == 0))//ilk donum noktasý sola kaydirilirsa
         {
-            phase = 2;
+            phase = 1;
             Debug.Log("Direnisi sectin.");
-            
         }
-        else if ()//ikinci donum noktasi sola kaydirilirsa
+        else if ((phase == 1) && (CardMovement.storyCardValue == 0))//ikinci donum noktasi sola kaydirilirsa
         {
             phase = 3;
             Debug.Log("Kaldin.");
         }
-        else if ()//ikinci donum noktasi saga kaydirilirsa
+        else if ((phase == 1) && (CardMovement.storyCardValue == 1))//ikinci donum noktasi saga kaydirilirsa
         {
             phase = 4;
             Debug.Log("Kactin.");
         }
-        else if ()//ilk donum noktasý saga kaydirilirsa
+        else if ((phase == 0) && (CardMovement.storyCardValue == 1))//ilk donum noktasý saga kaydirilirsa
         {
             phase = 5;
             Debug.Log("Devleti sectin.");
         }
-        else if ()//ucuncu donum noktasý sola kaydirilirsa
+        else if ((phase == 2) && (CardMovement.storyCardValue == 0))//ucuncu donum noktasý sola kaydirilirsa
         {
             phase = 5;
             Debug.Log("Kactin.");
         }
-        else if ()//ucuncu donum noktasý saga kaydirilirsa
+        else if ((phase == 2) && (CardMovement.storyCardValue == 1))//ucuncu donum noktasý saga kaydirilirsa
         {
             phase = 6;
             Debug.Log("Kaldin.");
         }
-        */
+
     }
 
-    public void phases()
+    public void Phases()
     {
         if (phase == 0)
         {
-            mainDeck = deck_1;
+            DeckCopy(deck_1);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
 
         }
         else if (phase == 1)
         {
-            mainDeck = deck_2;
+            DeckCopy(deck_2);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
         }
         else if (phase == 2)
         {
-            mainDeck = deck_3;
+            DeckCopy(deck_3);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
         }
         else if (phase == 3)
         {
-            mainDeck = deck_4;
+            DeckCopy(deck_4);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
         }
         else if (phase == 4)
         {
-            mainDeck = deck_5;
+            DeckCopy(deck_5);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
         }
         else if (phase == 5)
         {
-            mainDeck = deck_6;
+            DeckCopy(deck_6);
             totalCardCount = GameManager.cardCounter + totalCardCount;
             GameManager.cardCounter = 0;
         }
     }
 
-    public void randomCardset(int[] Deck, int deckLength, int firstCardNumb, int lastCardNumb)
+    public void RandomCardset(int[] Deck, int deckLength, int firstCardNumb, int lastCardNumb)
     {
         for (int i = 0; i < deckLength; i++)
         {
@@ -126,5 +125,12 @@ public class RandomCardGen : MonoBehaviour
 
         randNumber = Random.Range(firstCardNumb, lastCardNumb + 1);
         Deck[randNumber] = 100; //hikaye kartinin destede sirasi
+    }
+    public void DeckCopy(int[] Deck)
+    {
+        for (int i = 0; i < 30; i++)
+        {
+            mainDeck[i] = Deck[i];
+        }
     }
 }

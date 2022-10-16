@@ -9,6 +9,7 @@ public class CardMovement : MonoBehaviour
     Canvas canvas;
     Vector3 startPos;
     GameManager gameManager;
+    public static int storyCardValue;
     void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
@@ -38,12 +39,14 @@ public class CardMovement : MonoBehaviour
         {                               // Eski deðerler 50 ve 130 -Altay
             gameManager.SwipeEffect(true);
             Debug.Log("sol");
+            storyCardValue = 0;
         }
             //ekrandan cikip silinmeli yeni kart gelmeli
         else if (transform.position.x > 3)
         {
             gameManager.SwipeEffect(false);
             Debug.Log("sað");
+            storyCardValue = 1;
         }
         //burada da
         transform.position = startPos;
