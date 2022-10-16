@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Card card;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
-    public void SwipeEffectt(bool value)
+    public void SwipeEffect(bool value)
     {
         if (value)
             foreach (var statPair in card.leftStats)
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         
         GetComponent<SaveLoad>().Save();
     }
-    void changeCard()
+    void ChangeCard()
     {
         Rtext.text = card.Rtext;
         Ltext.text = card.Ltext;
