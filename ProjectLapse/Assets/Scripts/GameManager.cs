@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         cardCounter++;
         if (statStorage.CheckStats())
         {
-
+            statStorage.GetStat().GetEndingCards;
         }
         GetComponent<SaveLoad>().Save();
     }

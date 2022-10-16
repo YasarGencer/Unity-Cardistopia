@@ -8,6 +8,7 @@ public class StatStorage : MonoBehaviour
     
     [SerializeField] private Stat stat1;
     [SerializeField] private Stat stat2;
+
     private Stat endingStat;
     private void Start()
     {
