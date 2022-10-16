@@ -35,10 +35,10 @@ public class CardMovement : MonoBehaviour
     public void DropHandler(BaseEventData data)
     {
         if (transform.position.x < 50)
-            gameManager.SwipeEffectt(true);
+            gameManager.SwipeEffect(true);
             //ekrandan cikip silinmeli yeni kart gelmeli
         else if (transform.position.x > 130)
-            gameManager.SwipeEffectt(false);
+            gameManager.SwipeEffect(false);
             //burada da
         transform.position = startPos;
         transform.rotation = Quaternion.Euler(0, 0, 0);
