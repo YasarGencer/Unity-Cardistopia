@@ -319,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &185518951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -954,7 +954,6 @@ GameObject:
   - component: {fileID: 1121393310}
   - component: {fileID: 1121393309}
   - component: {fileID: 1121393308}
-  - component: {fileID: 1121393307}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -962,19 +961,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1121393307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121393306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3090db013a2c6ab4583022db49a7cd2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  video_length: 5
 --- !u!81 &1121393308
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1486,7 +1472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 14}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 568.58, y: 805.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857679369
@@ -1546,7 +1532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b7ebe7e9ea049459c16adeccfb4b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 0
+  maxDistance: 350
 --- !u!114 &1857679371
 MonoBehaviour:
   m_ObjectHideFlags: 0

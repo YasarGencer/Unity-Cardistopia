@@ -7,7 +7,7 @@ public class CardMovement : MonoBehaviour
 {
     public int maxDistance;
     Canvas canvas;
-    Vector2 startPos;
+    Vector3 startPos;
     GameManager gameManager;
     void Start()
     {
