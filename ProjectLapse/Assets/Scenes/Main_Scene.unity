@@ -390,9 +390,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2117422645}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 1000
+  m_WholeNumbers: 1
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -947,9 +947,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1493227751}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 1000
+  m_WholeNumbers: 1
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1198,6 +1198,8 @@ GameObject:
   - component: {fileID: 1075149276}
   - component: {fileID: 1075149275}
   - component: {fileID: 1075149274}
+  - component: {fileID: 1075149278}
+  - component: {fileID: 1075149277}
   m_Layer: 0
   m_Name: Game_Manager_Object
   m_TagString: Untagged
@@ -1233,7 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardOnDisplay: {fileID: 1857679371}
-  card: {fileID: 11400000, guid: 4a3de371af746dc449dedfafc3e18974, type: 2}
+  currentCard: {fileID: 11400000, guid: 4a3de371af746dc449dedfafc3e18974, type: 2}
   text: {fileID: 548401688}
   Rtext: {fileID: 1901983253}
   Ltext: {fileID: 1565367673}
@@ -1273,6 +1275,43 @@ MonoBehaviour:
   deck_4: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   deck_5: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   deck_6: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &1075149277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075149270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007d53f657efa6f4cb495b89829c9b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statList:
+  - {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+  - {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+  - {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+  - {fileID: 11400000, guid: 703a43443f3aea941bfd1981734721a9, type: 2}
+  - {fileID: 11400000, guid: c3faad5640af6a644986d0ca48565146, type: 2}
+  - {fileID: 11400000, guid: cf6af246fee1aec428dd4f2610c600f3, type: 2}
+  - {fileID: 11400000, guid: 61804bb594b93fa45813ec628c67bd15, type: 2}
+  - {fileID: 11400000, guid: 1dbefb416e92da841a4f92e6812b1111, type: 2}
+--- !u!114 &1075149278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075149270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4100d4edb0964a544b571961afb17a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s1: {fileID: 1636592620}
+  s2: {fileID: 1817673536}
+  s3: {fileID: 709310855}
+  s4: {fileID: 87187318}
 --- !u!1 &1090314634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,9 +2028,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1033443911}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 1000
+  m_WholeNumbers: 1
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
