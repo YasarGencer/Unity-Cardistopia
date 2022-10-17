@@ -10,7 +10,7 @@ public class StatStorage : MonoBehaviour
 
     public bool CheckStats()
     {
-        for (int a=0;a!=5;a++)
+        for (int a=0;a<5;a++)
         {
             if (statList[a].currentValue >= 1000 || statList[a].currentValue <= 0)
             {

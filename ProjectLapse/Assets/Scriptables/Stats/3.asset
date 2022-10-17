@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31383f86bd90c7e4c895104106eed2ae, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  currentValue: 1000
+  currentValue: 500
   maxStatCards: []
   minStatCards: []
