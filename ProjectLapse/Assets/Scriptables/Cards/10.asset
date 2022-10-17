@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
-  m_Name: 17
+  m_Name: 10
   m_EditorClassIdentifier: 
-  text: Girlfriend
-  description: It's a gift from your lover. But that's a forbidden book. A small
-    gift for my most precious.
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: State Police
+  description: 'While walking down the street, you had a quarrel with a man and accidentally
+    said a forbidden word. Hearing this, the citizens reported you to the police.
+
+    "You
+    have to be careful with the language you use! You have to pay a fine."'
+  Rtext: Pay your fine.
+  Ltext: Run.
+  art: {fileID: 21300000, guid: f76c626b9546f5f47841d9cc3936dada, type: 3}
   leftStats: []
   rightStats: []

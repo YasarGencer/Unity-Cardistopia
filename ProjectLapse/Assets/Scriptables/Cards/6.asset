@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
-  m_Name: 17
+  m_Name: 6
   m_EditorClassIdentifier: 
-  text: Girlfriend
-  description: It's a gift from your lover. But that's a forbidden book. A small
-    gift for my most precious.
-  Rtext: 
-  Ltext: 
+  text: Big Brother
+  description: As much as too little of everything is harmful, too much is also harmful.
+    Balance your life and face me. I will be waiting for you.
+  Rtext: Wait then.
+  Ltext: We will see.
   art: {fileID: 0}
   leftStats: []
   rightStats: []
