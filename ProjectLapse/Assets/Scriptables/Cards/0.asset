@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 0
   m_EditorClassIdentifier: 
-  text: Name Test
-  description: Description Test
-  Rtext: Right test
-  Ltext: Left Test
-  art: {fileID: 21300000, guid: fdad952bb7742cf469ed8b5c40bb9a74, type: 3}
+  text: POLIS ADAM
+  description: EYVAH DEVLET POLISI
+  Rtext: POLIS SAG
+  Ltext: POLIS SOL
+  art: {fileID: 21300000, guid: f76c626b9546f5f47841d9cc3936dada, type: 3}
   leftStats:
   - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
     changeValue: 250
