@@ -8,10 +8,16 @@ public class GameManager : MonoBehaviour
 {
     public Image cardOnDisplay;
     public Card currentCard;
+    public Card[] cards;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
 
     private StatStorage statStorage;
+    private void Start()
+    {
+        statStorage = GetComponent<StatStorage>();
+        ChangeCard();
+    }
     public void SwipeEffect(bool value)
     {
         if (value)
@@ -33,14 +39,15 @@ public class GameManager : MonoBehaviour
     }
     void ChangeCard()
     {
+        CurrentCard();
         Rtext.text = currentCard.Rtext;
         Ltext.text = currentCard.Ltext;
         text.text = currentCard.text;
         cardOnDisplay.sprite = currentCard.art;
         DescriptionText.text = currentCard.description;
     }
-    private void Start()
+    void CurrentCard()
     {
-        statStorage = GetComponent<StatStorage>();
+        currentCard = cards[Random.Range(0, cards.Length)];
     }
 }
