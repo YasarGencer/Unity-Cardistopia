@@ -17,20 +17,68 @@ public class Stats_UI : MonoBehaviour
     {
         if(s1.value != GetComponent<StatStorage>().statList[0].currentValue)
         {
-
+            while (s1.value > GetComponent<StatStorage>().statList[0].currentValue)
+            {
+                s1.value -= 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+            while (s1.value < GetComponent<StatStorage>().statList[0].currentValue)
+            {
+                s1.value += 1;
+                yield return new WaitForSeconds(0.001f);
+            }
         }
         yield return null;
     }
     IEnumerator S2()
     {
+        if (s2.value != GetComponent<StatStorage>().statList[1].currentValue)
+        {
+            while (s2.value > GetComponent<StatStorage>().statList[1].currentValue)
+            {
+                s2.value -= 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+            while (s2.value < GetComponent<StatStorage>().statList[1].currentValue)
+            {
+                s2.value += 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+        }
         yield return null;
     }
     IEnumerator S3()
     {
+        if (s3.value != GetComponent<StatStorage>().statList[2].currentValue)
+        {
+            while (s3.value > GetComponent<StatStorage>().statList[2].currentValue)
+            {
+                s3.value -= 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+            while (s3.value < GetComponent<StatStorage>().statList[2].currentValue)
+            {
+                s3.value += 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+        }
         yield return null;
     }
     IEnumerator S4()
     {
+        if (s4.value != GetComponent<StatStorage>().statList[3].currentValue)
+        {
+            while (s4.value > GetComponent<StatStorage>().statList[3].currentValue)
+            {
+                s4.value -= 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+            while (s4.value < GetComponent<StatStorage>().statList[3].currentValue)
+            {
+                s4.value += 1;
+                yield return new WaitForSeconds(0.001f);
+            }
+        }
         yield return null;
     }
 }

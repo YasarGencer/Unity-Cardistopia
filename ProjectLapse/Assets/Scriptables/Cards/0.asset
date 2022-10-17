@@ -18,12 +18,12 @@ MonoBehaviour:
   Ltext: Left Test
   art: {fileID: 21300000, guid: fdad952bb7742cf469ed8b5c40bb9a74, type: 3}
   leftStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: 250
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: -250
+  rightStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: -250
   - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
     changeValue: 250
-  - stat: {fileID: 11400000, guid: 703a43443f3aea941bfd1981734721a9, type: 2}
-    changeValue: -60
-  rightStats:
-  - stat: {fileID: 11400000, guid: cf6af246fee1aec428dd4f2610c600f3, type: 2}
-    changeValue: -341
-  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
-    changeValue: 599
