@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomCardGen : MonoBehaviour
 {
-    public int phase = 0, randNumber = 0, firstStoryCardNumber = 30, lastStoryCardNumber = 35;
+    public int phase = 0, randNumber = 0, firstStoryCardNumber = 25, lastStoryCardNumber = 30;
     public static int totalCardCount = 0;
     public int[] mainDeck = new int[30];
     public int[] deck_1 = new int[70];
