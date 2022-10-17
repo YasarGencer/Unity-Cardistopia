@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
-  m_Name: 2
+  m_Name: 5
   m_EditorClassIdentifier: 
-  text: You
-  description: Then let's begin.
-  Rtext: 
-  Ltext: 
-  art: {fileID: 21300000, guid: 170732c26d87af840add12efa90a2610, type: 3}
+  text: Big Brother
+  description: I am the Big Brother. I know everything. I watch everyone and I amuse
+    myself. I own absolute authority over human beings. Moreover you people are not 
+    even aware of anything.
+  Rtext: You tyrant!
+  Ltext: Sounds fun.
+  art: {fileID: 0}
   leftStats: []
   rightStats: []
