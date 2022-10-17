@@ -12,23 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 0
   m_EditorClassIdentifier: 
-  text: POLIS ADAM
-  description: "Devlet polisi senden kimli\u011Fini \xE7\u0131karman\u0131 istedi.
-    Kimli\u011Fini \xE7\u0131kartmak i\xE7in sa\u011Fa kayd\u0131r."
-  Rtext: '-250 PARA
-
-    +250 VAKIT'
-  Ltext: '+250 PARA
-
-    -250 VAKIT'
-  art: {fileID: 21300000, guid: f76c626b9546f5f47841d9cc3936dada, type: 3}
-  leftStats:
-  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
-    changeValue: 250
-  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
-    changeValue: -250
-  rightStats:
-  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
-    changeValue: -250
-  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
-    changeValue: 250
+  text: 
+  description: 
+  Rtext: 
+  Ltext: 
+  art: {fileID: 0}
+  leftStats: []
+  rightStats: []
