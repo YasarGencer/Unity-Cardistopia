@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 40
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: 2 days later, there will be live music in that cafe at downtown, and
+    they will play my favorite artist's tracks! Can you believe this?
+  Rtext: I hope you are not thinking going without me.
+  Ltext: Have fun for me.
   art: {fileID: 0}
   leftStats: []
   rightStats: []

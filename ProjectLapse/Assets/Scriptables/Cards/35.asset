@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 35
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: I just let you know that the deadline for the volunteer money we have
+    to pay every month is today.
+  Rtext: 'I''ll pay now, I forgot.
+
+'
+  Ltext: I've already paid.
   art: {fileID: 0}
   leftStats: []
   rightStats: []

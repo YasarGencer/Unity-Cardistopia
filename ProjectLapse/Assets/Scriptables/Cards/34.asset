@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 34
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: Your friend wants to borrow money from you.
+  Rtext: Lend him.
+  Ltext: Refuse him.
   art: {fileID: 0}
   leftStats: []
   rightStats: []

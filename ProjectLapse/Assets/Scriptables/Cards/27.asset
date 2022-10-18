@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 27
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: I'm going to the state festival tonight, you're coming too, right?
+  Rtext: Of course, we do not always find such fun activities like festivals.
+  Ltext: I'd love to come, but I'm too tired to have fun today.
   art: {fileID: 0}
   leftStats: []
   rightStats: []

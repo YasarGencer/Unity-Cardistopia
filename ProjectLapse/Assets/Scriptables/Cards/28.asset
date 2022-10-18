@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 28
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: 'I have to spend my weekend on this because the company''s paperwork
+    is piling up, do you want to help me?
+
+'
+  Rtext: If I won't help you, who will I?
+  Ltext: I can't spend my weekend on this!
   art: {fileID: 0}
   leftStats: []
   rightStats: []

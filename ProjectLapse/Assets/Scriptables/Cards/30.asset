@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 30
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
+  text: Your friend
+  description: Let's watch Big Brother's speech this week live, what do you say?
+  Rtext: I'm coming right now.
+  Ltext: You go, I'll catch up with you.
   art: {fileID: 0}
   leftStats: []
   rightStats: []
