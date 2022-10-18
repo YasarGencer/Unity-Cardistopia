@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 43
   m_EditorClassIdentifier: 
-  text: Your friend
+  text: Friend
   description: Why did you talk to that stupid today. Even knowing that I hate her!
   Rtext: 'She asked a question about an important issue, and I answered, you don''t
     need to be so angry.
 
 '
   Ltext: I'm not going to ask you who to talk to or not.
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 98a808bc32757b1428ee92910c08d5c0, type: 3}
   leftStats: []
   rightStats: []

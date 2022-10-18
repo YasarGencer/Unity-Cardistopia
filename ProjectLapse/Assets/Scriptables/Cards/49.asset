@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 49
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Neighbor
+  description: 'Your neighbor has followed you.
+
+    "I saw you with a girl. You
+    can''t have illegal relationship. I will report you."'
+  Rtext: Were you following me?
+  Ltext: Whan can i do to forget this.
+  art: {fileID: 21300000, guid: c3693fef5e70e2c43b0dd778d8e8aa28, type: 3}
   leftStats: []
   rightStats: []

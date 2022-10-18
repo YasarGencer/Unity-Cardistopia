@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 37
   m_EditorClassIdentifier: 
-  text: Your friend
+  text: Friend
   description: Hi! You seemed depressed today, is there a problem?
   Rtext: Nothing, I was just daydreaming.
   Ltext: My mother got sick, I was thinking about her.
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 98a808bc32757b1428ee92910c08d5c0, type: 3}
   leftStats: []
   rightStats: []

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 31
   m_EditorClassIdentifier: 
-  text: Your friend
+  text: Friend
   description: I suspect my neighbor is a member of the revolution.
   Rtext: Don't act without proof.
   Ltext: Go report it directly, don't pity those scumbags!

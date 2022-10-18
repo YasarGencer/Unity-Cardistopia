@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 55
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Neighbor
+  description: 'Your neighbor is very happy, you are lucky today.
+
+    "I have inherited
+    a great legacy from my grandfather, wish anything you want."'
+  Rtext: I wouldn't say no to some money.
+  Ltext: I think you'd better take a vacation.
+  art: {fileID: 21300000, guid: c3693fef5e70e2c43b0dd778d8e8aa28, type: 3}
   leftStats: []
   rightStats: []
