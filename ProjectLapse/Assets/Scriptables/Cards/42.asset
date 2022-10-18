@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
+  m_Name: 42
+  m_EditorClassIdentifier: 
+  text: Friend
+  description: They took my father to the hospital, I have to be with him. I have
+    a few things left to complete for today, can you complete it for me, please?
+  Rtext: What are you waiting for. Go to the hospital to see your father as soon
+    as possible.
+  Ltext: My plate is full too today.
+  art: {fileID: 21300000, guid: 98a808bc32757b1428ee92910c08d5c0, type: 3}
+  rightStats:
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: 200
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: -200
+  leftStats:
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: -200
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: 100

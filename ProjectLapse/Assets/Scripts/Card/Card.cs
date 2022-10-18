@@ -12,8 +12,9 @@ public class Card : ScriptableObject
     [TextArea] public string Ltext;
     public Sprite art;
 
-    public List<StatPair> leftStats = new List<StatPair>();
+    
     public List<StatPair> rightStats = new List<StatPair>();
+    public List<StatPair> leftStats = new List<StatPair>();
 }
 
 [System.Serializable]

@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31383f86bd90c7e4c895104106eed2ae, type: 3}
-  m_Name: 0
+  m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
+  m_Name: 4
   m_EditorClassIdentifier: 
-  currentValue: 500
-  maxStatCards: []
-  minStatCards: []
+  text: Big Brother
+  description: It doesn't matter. You must be him.
+  Rtext: Maybe I am.
+  Ltext: Yes I am. Now tell me who you are.
+  art: {fileID: 0}
+  leftStats: []
+  rightStats: []

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
+  m_Name: 12
+  m_EditorClassIdentifier: 
+  text: State Police
+  description: 'On your way to work you find yourself in a brawl between protesters
+    and police. Police caught you.
+
+    "Come here, you will learn what it means
+    to rebel against the state."'
+  Rtext: Bribe.
+  Ltext: Surrender.
+  art: {fileID: 21300000, guid: f76c626b9546f5f47841d9cc3936dada, type: 3}
+  rightStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: -100
+  leftStats:
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: -100

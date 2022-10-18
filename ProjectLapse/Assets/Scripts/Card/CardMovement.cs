@@ -10,9 +10,11 @@ public class CardMovement : MonoBehaviour
     Vector3 startPos;
     GameManager gameManager;
     public static int storyCardValue;
+    Animator anim;
     void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        anim = GetComponent<Animator>();
         gameManager = GameObject.Find("Game_Manager_Object").GetComponent<GameManager>();
         startPos = transform.position;
     }
@@ -35,20 +37,24 @@ public class CardMovement : MonoBehaviour
     }
     public void DropHandler(BaseEventData data)
     {
-        if (transform.position.x < -6)  // Canvasýn içinde x deðeri nedense -9 ve 9 arasýnda gidip geliyor þimdilik deðiþtiriyorum eski
-        {                               // Eski deðerler 50 ve 130 -Altay
-            gameManager.SwipeEffect(true);
-            Debug.Log("sol");
-            storyCardValue = 1;
-        }
-            //ekrandan cikip silinmeli yeni kart gelmeli
+        if (transform.position.x < -6) // Canvasýn içinde x deðeri nedense -9 ve 9 arasýnda gidip geliyor þimdilik deðiþtiriyorum eski // Eski deðerler 50 ve 130 -Altay
+            StartCoroutine(Drop(true, 1));
         else if (transform.position.x > 6)
-        {
-            gameManager.SwipeEffect(false);
-            Debug.Log("sað");
-            storyCardValue = 2;
-        }
-        //burada da
+            StartCoroutine(Drop(false, 2));
+        else
+            ResetPos();
+    }
+    IEnumerator Drop(bool value, int value2)
+    {
+        anim.SetTrigger("Swipe");
+        yield return new WaitForSeconds(1);
+        gameManager.SwipeEffect(value);
+        storyCardValue = value2;
+        ResetPos();
+    }
+    
+    public void ResetPos()
+    {
         transform.position = startPos;
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
