@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 23
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Girlfriend
+  description: 'Your girlfriend invites you to the amusement park.
+
+    "A group
+    of revolutionaries got the old Amusement Park back up and running. I''ve never
+    been before. How about we have some fun"'
+  Rtext: Sounds fun. Let's go.
+  Ltext: I think it's a bad idea.If amusement parks are banned there's a reason.
+  art: {fileID: 21300000, guid: bf6edcfd7452c1e418489910d6f7c64c, type: 3}
   leftStats: []
   rightStats: []

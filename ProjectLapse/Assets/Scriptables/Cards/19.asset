@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 19
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Girlfriend
+  description: 'Are you going to surprise your girlfriend on her birthday?
+
+    "I''m
+    happier than I''ve ever been today it''s a great day."
+
+'
+  Rtext: I chose the perfect gift for you.
+  Ltext: The government banned birthdays, I can't do that.
+  art: {fileID: 21300000, guid: bf6edcfd7452c1e418489910d6f7c64c, type: 3}
   leftStats: []
   rightStats: []

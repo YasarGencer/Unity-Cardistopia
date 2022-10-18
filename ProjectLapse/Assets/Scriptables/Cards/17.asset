@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 17
   m_EditorClassIdentifier: 
   text: Girlfriend
-  description: It's a gift from your lover. But that's a forbidden book. A small
-    gift for my most precious.
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  description: "It's a gift from your lover. But that's a forbidden book. \n\"A small
+    gift for my most precious.\""
+  Rtext: "Start reading the book.\t\t"
+  Ltext: Throw the book away.
+  art: {fileID: 21300000, guid: bf6edcfd7452c1e418489910d6f7c64c, type: 3}
   leftStats: []
   rightStats: []

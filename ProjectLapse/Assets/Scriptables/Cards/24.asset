@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 24
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Girlfriend
+  description: 'Your lover discovered your secret talent.
+
+    "Look, I started drawing,
+    what do you think?"'
+  Rtext: These are amazing. The most beautiful drawings I've ever seen in my life.
+  Ltext: Can I watch you while you are drawing ? I want to see a masterpiece born.
+  art: {fileID: 21300000, guid: bf6edcfd7452c1e418489910d6f7c64c, type: 3}
   leftStats: []
   rightStats: []

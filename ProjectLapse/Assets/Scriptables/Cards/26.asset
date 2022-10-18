@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 26
   m_EditorClassIdentifier: 
-  text: 
-  description: 
-  Rtext: 
-  Ltext: 
-  art: {fileID: 0}
+  text: Girlfriend
+  description: 'You find a old music player in antique store. But you don''t know
+    how it works.
+
+    "I can make it work. There are two songs. First one is DFT,
+    second is TIL, which one would you like to listen?"'
+  Rtext: TIL sounds nice.
+  Ltext: DFT would be great.
+  art: {fileID: 21300000, guid: bf6edcfd7452c1e418489910d6f7c64c, type: 3}
   leftStats: []
   rightStats: []
