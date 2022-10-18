@@ -22,5 +22,13 @@ MonoBehaviour:
   Rtext: Surrender.
   Ltext: Hire a lawyer.
   art: {fileID: 21300000, guid: c3693fef5e70e2c43b0dd778d8e8aa28, type: 3}
-  leftStats: []
-  rightStats: []
+  rightStats:
+  - stat: {fileID: 0}
+    changeValue: -100
+  - stat: {fileID: 0}
+    changeValue: -100
+  leftStats:
+  - stat: {fileID: 0}
+    changeValue: 100
+  - stat: {fileID: 0}
+    changeValue: -100

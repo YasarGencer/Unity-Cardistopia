@@ -21,5 +21,9 @@ MonoBehaviour:
   Rtext: Bribe.
   Ltext: Surrender.
   art: {fileID: 21300000, guid: f76c626b9546f5f47841d9cc3936dada, type: 3}
-  leftStats: []
-  rightStats: []
+  rightStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: -100
+  leftStats:
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: -100

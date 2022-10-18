@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: 39
   m_EditorClassIdentifier: 
   text: Friend
-  description: '''m in a bit of debt this month, can you lend me some money?'
+  description: I'm in a bit of debt this month, can you lend me some money?
   Rtext: How much money do you need?
   Ltext: Sorry, I'm broke too.
   art: {fileID: 21300000, guid: 98a808bc32757b1428ee92910c08d5c0, type: 3}
-  leftStats: []
-  rightStats: []
+  rightStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: -200
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: 100
+  leftStats:
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: -100

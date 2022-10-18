@@ -18,5 +18,15 @@ MonoBehaviour:
   Rtext: I hope you are not thinking going without me.
   Ltext: Have fun for me.
   art: {fileID: 21300000, guid: 98a808bc32757b1428ee92910c08d5c0, type: 3}
-  leftStats: []
-  rightStats: []
+  rightStats:
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: -100
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: -100
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: 200
+  leftStats:
+  - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
+    changeValue: 100
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: -100
