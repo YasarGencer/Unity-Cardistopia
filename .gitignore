@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 *.dwlt
 ProjectLapse/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+*.dwlt
