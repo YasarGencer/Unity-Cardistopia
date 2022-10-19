@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Your friend wants to borrow money from you.
   Rtext: Lend him.
   Ltext: Refuse him.
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 170732c26d87af840add12efa90a2610, type: 3}
   rightStats:
   - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
     changeValue: -100

@@ -10,7 +10,7 @@ public class SaveLoad : MonoBehaviour
     }
 
     public void Save(){
-        for(int a=0;a!=40;a++){
+        for(int a=0;a!=30;a++){
             PlayerPrefs.SetInt("Card"+a.ToString(), GetComponent<RandomCardGen>().mainDeck[a]);
             
         }

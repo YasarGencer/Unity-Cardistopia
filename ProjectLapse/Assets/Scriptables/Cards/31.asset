@@ -16,6 +16,6 @@ MonoBehaviour:
   description: I suspect my neighbor is a member of the revolution.
   Rtext: Don't act without proof.
   Ltext: Go report it directly, don't pity those scumbags!
-  art: {fileID: 0}
-  leftStats: []
+  art: {fileID: 21300000, guid: 170732c26d87af840add12efa90a2610, type: 3}
   rightStats: []
+  leftStats: []

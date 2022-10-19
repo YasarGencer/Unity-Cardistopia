@@ -17,6 +17,6 @@ MonoBehaviour:
     Balance your life and face me. I will be waiting for you.
   Rtext: Wait then.
   Ltext: We will see.
-  art: {fileID: 0}
-  leftStats: []
+  art: {fileID: 21300000, guid: d85156d13db7bc648aec869d58c1eb0c, type: 3}
   rightStats: []
+  leftStats: []

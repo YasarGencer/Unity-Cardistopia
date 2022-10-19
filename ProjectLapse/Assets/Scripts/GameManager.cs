@@ -8,10 +8,14 @@ public class GameManager : MonoBehaviour
 {
     public Image cardOnDisplay;
     public Card currentCard;
-    public Card[] cards;
+    public Card[] deck;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
-
+    public int cardCounterDisplay = 0;
+    public void Update()
+    {
+        cardCounterDisplay = cardCounter;
+    }
     private StatStorage statStorage;
     private void Start()
     {
@@ -37,7 +41,7 @@ public class GameManager : MonoBehaviour
         GetComponent<SaveLoad>().Save();
         ChangeCard();
     }
-    void ChangeCard()
+    public void ChangeCard()
     {
         CurrentCard();
         Rtext.text = currentCard.Rtext;
@@ -48,6 +52,6 @@ public class GameManager : MonoBehaviour
     }
     void CurrentCard()
     {
-        currentCard = cards[Random.Range(0, cards.Length)];
+        currentCard = deck[GetComponent<RandomCardGen>().mainDeck[cardCounter]];
     }
 }
