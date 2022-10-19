@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Come on, let's go man-to-man with you today, what do you say?
   Rtext: Let's go.
   Ltext: Enough, I've had enough of you.
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 170732c26d87af840add12efa90a2610, type: 3}
   rightStats:
   - stat: {fileID: 11400000, guid: 6915f14ba64cc2242be4bc818cb5165c, type: 2}
     changeValue: -100

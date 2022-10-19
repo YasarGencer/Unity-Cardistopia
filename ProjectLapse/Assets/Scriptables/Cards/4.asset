@@ -16,6 +16,6 @@ MonoBehaviour:
   description: It doesn't matter. You must be him.
   Rtext: Maybe I am.
   Ltext: Yes I am. Now tell me who you are.
-  art: {fileID: 0}
-  leftStats: []
+  art: {fileID: 21300000, guid: d85156d13db7bc648aec869d58c1eb0c, type: 3}
   rightStats: []
+  leftStats: []

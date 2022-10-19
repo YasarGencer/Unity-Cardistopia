@@ -17,8 +17,11 @@ public class RandomCardGen : MonoBehaviour
     void Start()
     {
         RandomCardset(deck_1,firstStoryCardNumber, lastStoryCardNumber);
+
         RandomCardset(deck_2,firstStoryCardNumber, lastStoryCardNumber);
+
         RandomCardset(deck_3,firstStoryCardNumber, lastStoryCardNumber);
+
         RandomCardset(deck_4,firstStoryCardNumber, lastStoryCardNumber);
         RandomCardset(deck_5,firstStoryCardNumber, lastStoryCardNumber);
         RandomCardset(deck_6,firstStoryCardNumber, lastStoryCardNumber);
@@ -37,24 +40,28 @@ public class RandomCardGen : MonoBehaviour
         if ((phase == 1) && (CardMovement.storyCardValue == 1))//ilk donum noktasý sola kaydirilirsa
         {
             phase = 2;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Devleti sectin.");
         }
         else if ((phase == 1) && (CardMovement.storyCardValue == 2))//ikinci donum noktasi sola kaydirilirsa
         {
             phase = 3;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Direnisi sectin.");
         }
         else if ((phase == 2) && (CardMovement.storyCardValue == 1))//ikinci donum noktasi saga kaydirilirsa
         {
             phase = 4;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Kaldin.");
         }
         else if ((phase == 2) && (CardMovement.storyCardValue == 2))//ilk donum noktasý saga kaydirilirsa
         {
             phase = 5;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Kactin.");
 
@@ -62,12 +69,14 @@ public class RandomCardGen : MonoBehaviour
         else if ((phase == 3) && (CardMovement.storyCardValue == 1))//ucuncu donum noktasý sola kaydirilirsa
         {
             phase = 5;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Kactin.");
         }
         else if ((phase == 3) && (CardMovement.storyCardValue == 2))//ucuncu donum noktasý saga kaydirilirsa
         {
             phase = 6;
+            GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Kaldin.");
         }
@@ -80,38 +89,34 @@ public class RandomCardGen : MonoBehaviour
         {
             DeckCopy(deck_1);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
 
         }
         else if (phase == 1)
         {
             DeckCopy(deck_2);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
         }
         else if (phase == 2)
         {
             DeckCopy(deck_3);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
         }
         else if (phase == 3)
         {
             DeckCopy(deck_4);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
+
         }
         else if (phase == 4)
         {
             DeckCopy(deck_5);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
         }
         else if (phase == 5)
         {
             DeckCopy(deck_6);
             totalCardCount = GameManager.cardCounter + totalCardCount;
-            GameManager.cardCounter = 0;
+
         }
     }
 
@@ -122,14 +127,20 @@ public class RandomCardGen : MonoBehaviour
             Deck[i] = i;
         }
 
-        for (int t = 0; t < Deck.Length; t++)
+        for (int t = 7; t < Deck.Length; t++)
         {
             int tmp = Deck[t];
             int r = Random.Range(t, Deck.Length);
             Deck[t] = Deck[r];
             Deck[r] = tmp;
         }
-
+        Deck[0] = 0;
+        Deck[1] = 1;
+        Deck[2] = 2;
+        Deck[3] = 3;
+        Deck[4] = 4;
+        Deck[5] = 5;
+        Deck[6] = 6;
         randNumber = Random.Range(firstCardNumb, lastCardNumb + 1);
         Deck[randNumber] = 100; //hikaye kartinin destede sirasi
     }

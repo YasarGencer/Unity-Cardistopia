@@ -16,6 +16,6 @@ MonoBehaviour:
   description: Then let's begin.
   Rtext: 
   Ltext: 
-  art: {fileID: 21300000, guid: 170732c26d87af840add12efa90a2610, type: 3}
-  leftStats: []
+  art: {fileID: 0}
   rightStats: []
+  leftStats: []
