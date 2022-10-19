@@ -11,7 +11,11 @@ public class GameManager : MonoBehaviour
     public Card[] deck;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
-
+    public int cardCounterDisplay = 0;
+    public void Update()
+    {
+        cardCounterDisplay = cardCounter;
+    }
     private StatStorage statStorage;
     private void Start()
     {
