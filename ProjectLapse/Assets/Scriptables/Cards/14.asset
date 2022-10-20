@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 14
   m_EditorClassIdentifier: 
-  text: State Police
+  text: Police
   description: 'The police came to search for a routine home check. They wanted to
     confiscate the painting they found in your house because they thought it would
     stir people up.

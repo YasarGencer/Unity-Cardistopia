@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008923f2fa6f16a4a8481791b4c13c44, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
-  text: State Police
+  text: Police
   description: 'You come across with the police during curfew. You will have to go
     to jail for 3 days or you need to pay 1 week worth of your income to bail out.
 
