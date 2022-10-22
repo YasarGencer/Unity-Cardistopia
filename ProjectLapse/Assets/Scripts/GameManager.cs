@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Card[] deck,specialDeck;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
-    public int cardCounterDisplay = 0;
+    public int cardCounterDisplay = 0, specialCardID;
     public void Update()
     {
         cardCounterDisplay = cardCounter;
@@ -52,13 +52,14 @@ public class GameManager : MonoBehaviour
     }
     void CurrentCard()
     {
-        if (true)
+        if (specialCardID==0)
         {
             currentCard = deck[GetComponent<RandomCardGen>().mainDeck[cardCounter]];
         }
         else
         {
-            currentCard = specialDeck;
+            currentCard = specialDeck[specialCardID];
+            specialCardID = 0;
         }
     }
 }
