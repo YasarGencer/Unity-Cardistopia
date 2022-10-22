@@ -13,14 +13,15 @@ public class StatStorage : MonoBehaviour
     }
     public void StatReset()
     {
-        statList[0].currentValue = 500;
-        statList[1].currentValue = 500;
-        statList[2].currentValue = 500;
+        statList[0].currentValue = 500;//Money
+        statList[1].currentValue = 500;//Free Time
+        statList[2].currentValue = 500;//Sanity
         statList[3].currentValue = 500;
         statList[4].currentValue = 500;
-        statList[5].currentValue = 0;
-        statList[6].currentValue = 0;
-        statList[7].currentValue = 0;
+        statList[5].currentValue = 0;//ending 1
+        statList[6].currentValue = 0;//ending 2
+        statList[7].currentValue = 0;//ending 3
+        statList[8].currentValue = 500;//NGC
     }
     public bool CheckStats()
     {

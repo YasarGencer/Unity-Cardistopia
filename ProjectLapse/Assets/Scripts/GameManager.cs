@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public Image cardOnDisplay;
     public Card currentCard;
-    public Card[] deck;
+    public Card[] deck,specialDeck;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
     public int cardCounterDisplay = 0;
@@ -52,6 +52,13 @@ public class GameManager : MonoBehaviour
     }
     void CurrentCard()
     {
-        currentCard = deck[GetComponent<RandomCardGen>().mainDeck[cardCounter]];
+        if (true)
+        {
+            currentCard = deck[GetComponent<RandomCardGen>().mainDeck[cardCounter]];
+        }
+        else
+        {
+            currentCard = specialDeck;
+        }
     }
 }
