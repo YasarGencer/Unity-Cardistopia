@@ -1555,13 +1555,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 315f1008175f7b340bf8e432ce68e989, type: 2}
   - {fileID: 11400000, guid: 384929dc89d72ec4aae722bf13db82a3, type: 2}
   - {fileID: 11400000, guid: aefeef903765a1845aa5527e629e310c, type: 2}
-  specialDeck: []
+  specialDeck:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 2b1e0bb2434d08a45ac5973712a76692, type: 2}
   text: {fileID: 964037936}
   Rtext: {fileID: 1901983253}
   Ltext: {fileID: 1565367673}
   DescriptionText: {fileID: 548401688}
   cardCounterDisplay: 0
-  specialCardID: 0
+  specialCardID: 1
 --- !u!114 &1075149275
 MonoBehaviour:
   m_ObjectHideFlags: 0

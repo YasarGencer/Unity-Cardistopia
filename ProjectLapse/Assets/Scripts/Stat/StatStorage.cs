@@ -37,7 +37,13 @@ public class StatStorage : MonoBehaviour
         {
             if (statList[8].currentValue == 501)//continue
             {
-
+                GetComponent<SaveLoad>().Load();
+                statList[8].currentValue = 500;
+            }
+            else
+            {
+                GetComponent<GameManager>().ChangeCard();
+                statList[8].currentValue = 500;
             }
         }
         return false;

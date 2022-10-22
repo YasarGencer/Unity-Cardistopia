@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Card[] deck,specialDeck;
     public TextMeshProUGUI text, Rtext, Ltext, DescriptionText;
     public static int cardCounter = 0;
-    public int cardCounterDisplay = 0, specialCardID;
+    public int cardCounterDisplay = 0, specialCardID=1;
     public void Update()
     {
         cardCounterDisplay = cardCounter;
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         else
         {
             currentCard = specialDeck[specialCardID];
+            cardCounter--;
             specialCardID = 0;
         }
     }
