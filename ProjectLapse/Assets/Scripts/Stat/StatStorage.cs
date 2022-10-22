@@ -33,6 +33,13 @@ public class StatStorage : MonoBehaviour
                 return true;
             }
         }
+        if(statList[8].currentValue != 500)
+        {
+            if (statList[8].currentValue == 501)//continue
+            {
+
+            }
+        }
         return false;
     }
 
