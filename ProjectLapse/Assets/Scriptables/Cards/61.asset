@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: 61
   m_EditorClassIdentifier: 
   text: Police
-  description: 
+  description: "You let the government car pass. \n\"You learned who has the priority,
+    well done, here is your good citizen award.\""
   Rtext: 
   Ltext: 
-  art: {fileID: 0}
-  rightStats: []
-  leftStats: []
+  art: {fileID: 21300000, guid: f982670915bb5be4fb20e0d1a22ec847, type: 3}
+  rightStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: 300
+  leftStats:
+  - stat: {fileID: 11400000, guid: 28c106ba38fea4843a07e2d620439c86, type: 2}
+    changeValue: 300
+  - stat: {fileID: 11400000, guid: 094f83525f733b3438f8a09293249857, type: 2}
+    changeValue: 100
