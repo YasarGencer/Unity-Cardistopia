@@ -22,6 +22,9 @@ public class StatStorage : MonoBehaviour
         statList[6].currentValue = 0;//ending 2
         statList[7].currentValue = 0;//ending 3
         statList[8].currentValue = 500;//NGC
+        statList[9].currentValue = 500;//phase1ending
+        statList[10].currentValue = 500;//phase2ending
+        statList[11].currentValue = 500;//phase3ending
     }
     public bool CheckStats()
     {
@@ -35,13 +38,15 @@ public class StatStorage : MonoBehaviour
         }
         if(statList[8].currentValue != 500)
         {
-            if (statList[8].currentValue == 501)//continue
+            if (statList[8].currentValue == 501&& GetComponent<SaveLoad>().saved)//continue
             {
                 GetComponent<SaveLoad>().Load();
                 statList[8].currentValue = 500;
+                
             }
             else
             {
+                GetComponent<RandomCardGen>().Phases();
                 GetComponent<GameManager>().ChangeCard();
                 statList[8].currentValue = 500;
             }

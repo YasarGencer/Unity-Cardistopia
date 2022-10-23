@@ -49,7 +49,6 @@ public class CardMovement : MonoBehaviour
         anim.SetTrigger("Swipe");
         yield return new WaitForSeconds(1);
         gameManager.SwipeEffect(value);
-        storyCardValue = value2;
         ResetPos();
     }
     

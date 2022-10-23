@@ -29,57 +29,68 @@ public class RandomCardGen : MonoBehaviour
 
     void Update()
     {
-        Phases();
+        
         PhaseProgress();
     }
 
     public void PhaseProgress()
     {
         //donum noktasýndaki kartlarin saga ya da sola kaydirildiginda secim yapilacak mekanik eklenmeli
-
-        if ((phase == 1) && (CardMovement.storyCardValue == 1))//ilk donum noktasý sola kaydirilirsa
+        if (GetComponent<StatStorage>().statList[9].currentValue == 501)
         {
             phase = 2;
+            Phases();
             GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Devleti sectin.");
+            GetComponent<StatStorage>().statList[9].currentValue = 500;
         }
-        else if ((phase == 1) && (CardMovement.storyCardValue == 2))//ikinci donum noktasi sola kaydirilirsa
+        else if (GetComponent<StatStorage>().statList[9].currentValue == 499)
         {
-            phase = 3;
+            phase = 2;
+            Phases();
             GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
             Debug.Log("Direnisi sectin.");
+            GetComponent<StatStorage>().statList[9].currentValue = 500;
         }
-        else if ((phase == 2) && (CardMovement.storyCardValue == 1))//ikinci donum noktasi saga kaydirilirsa
+        else if (GetComponent<StatStorage>().statList[10].currentValue == 501)
         {
             phase = 4;
+            Phases();
             GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
-            Debug.Log("Kaldin.");
+            Debug.Log("Devlette kalmayi sectin.");
+            GetComponent<StatStorage>().statList[10].currentValue = 500;
         }
-        else if ((phase == 2) && (CardMovement.storyCardValue == 2))//ilk donum noktasý saga kaydirilirsa
+        else if (GetComponent<StatStorage>().statList[10].currentValue == 499)
         {
             phase = 5;
+            Phases();
             GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
-            Debug.Log("Kactin.");
-
+            Debug.Log("Kacmayi sectin.");
+            GetComponent<StatStorage>().statList[10].currentValue = 500;
         }
-        else if ((phase == 3) && (CardMovement.storyCardValue == 1))//ucuncu donum noktasý sola kaydirilirsa
-        {
-            phase = 5;
-            GameManager.cardCounter = 0;
-            CardMovement.storyCardValue = 0;
-            Debug.Log("Kactin.");
-        }
-        else if ((phase == 3) && (CardMovement.storyCardValue == 2))//ucuncu donum noktasý saga kaydirilirsa
+        else if (GetComponent<StatStorage>().statList[11].currentValue == 501)
         {
             phase = 6;
+            Phases();
             GameManager.cardCounter = 0;
             CardMovement.storyCardValue = 0;
-            Debug.Log("Kaldin.");
+            Debug.Log("Direniste kalmayi sectin.");
+            GetComponent<StatStorage>().statList[11].currentValue = 500;
         }
+        else if (GetComponent<StatStorage>().statList[11].currentValue == 499)
+        {
+            phase = 5;
+            Phases();
+            GameManager.cardCounter = 0;
+            CardMovement.storyCardValue = 0;
+            Debug.Log("Kacmayi sectin.");
+            GetComponent<StatStorage>().statList[11].currentValue = 500;
+        }
+        
 
     }
 
