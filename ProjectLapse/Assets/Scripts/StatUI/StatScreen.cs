@@ -15,8 +15,11 @@ public class StatScreen : MonoBehaviour
     }
     public void Close()
     {
-        if(instantiated != null)
+        if (instantiated != null)
+        {
             Destroy(instantiated);
+            instantiated = null;
+        }
     }
     private void Update()
     {
